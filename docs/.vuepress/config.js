@@ -94,8 +94,6 @@ module.exports = {
         title: 'Packages',
         children: [
           ['/packages/overview', 'Overview'],
-          ['/packages/slpjs', 'SLPJS'],
-          ['/packages/slp-validate', 'SLP-Validate'],
           ['/packages/slp-list', 'SLP-List'],
           ['/packages/bchaddrjs-slp', 'bchaddrjs-SLP'],
           {
@@ -112,6 +110,8 @@ module.exports = {
               ['/packages/slp-mdm.dart', 'SLP-MDM.dart'],
             ]
           },
+          ['/packages/slpjs', 'SLPJS'],
+          ['/packages/slp-validate', 'SLP-Validate']
         ]
       },
       {
@@ -119,7 +119,13 @@ module.exports = {
         children: [
           ['/tooling/overview', 'Overview'],
           ['/tooling/explorer', 'Explorer'],
-          ['/tooling/slp-unit-test-data', 'Unit Tests'],
+          {
+            title: 'Testing',
+            children: [
+              ['/tooling/slp-unit-test-data', 'Unit Tests'],
+              ['/tooling/fuzz', 'fuzz'],
+            ]
+          },
           {
             title: 'SLPDB',
             children: [
@@ -138,21 +144,42 @@ module.exports = {
               ['/tooling/txdecoder', 'txdecoder'],
               ['/tooling/slpdecoder', 'slpdecoder'],
               ['/tooling/blockdecoder', 'blockdecoder'],
-              ['/tooling/fuzz', 'fuzz'],
             ]
           },
-          ['/tooling/slp-indexer', 'Bitcoin.com SLP Indexer'],
+          {
+            title: 'BCHD',
+            children: [
+              ['/tooling/bchd', 'bchd'],
+              ['/tooling/meep', 'meep'],
+            ]
+          },
+          {
+            title: 'Servers',
+            children: [
+              ['/tooling/post-office-server', 'Post Office Server'],
+              ['/tooling/faucet', 'SLP Faucet'],
+            ]
+          },
           {
             title: 'Wallets',
             children: [
               ['/tooling/wallets', 'Overview'],
               ['/tooling/ecslp', 'Electron Cash SLP'],
-              ['/tooling/badger', 'Badger'],
-              ['/tooling/mint', 'Mint'],
-              ['/tooling/crescentcash', 'Crescent Cash'],
+              ['/tooling/pokket', 'Pokket'],
               ['/tooling/bitcoincomwallet', 'Bitcoin.com Wallet'],
               ['/tooling/monarch', 'Monarch'],
               ['/tooling/zapit', 'Zapit'],
+            ]
+          },
+          {
+            title: 'Defunct / Broken',
+            children: [
+              ['/tooling/rest', 'rest.bitcoin.com'],
+              ['/tooling/slp-indexer', 'Bitcoin.com SLP Indexer'],
+              ['/tooling/bitbox', 'BITBOX'],
+              ['/tooling/badger', 'Badger'],
+              ['/tooling/badger-sdk', 'Badger SDK'],
+              ['/tooling/mint', 'mint.bitcoin.com'],
             ]
           }
         ]

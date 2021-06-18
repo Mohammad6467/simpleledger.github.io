@@ -1,13 +1,12 @@
 # Badger
 
+::: danger
+Badger is abandoned and may have serious bugs
+:::
+
 ::: tip View Repo:
 [https://github.com/Bitcoin-com/badger](https://github.com/Bitcoin-com/badger)
 :::
-
-::: warning
-Badger is currently without regular development, and only critical issues will be able to be fixed.
-:::
-
 
 Badger is a secure identity vault for Bitcoin Cash. It allows you to hold BCH & tokens, and serves as your bridge to decentralized applications (dapps).
 
